@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://example.org/">
+
+  <rdf:Description rdf:about="http://example.org/Birds">
+    <ns0:above rdf:resource="http://example.org/Mountains"/>
+    <ns0:right_of>
+      <rdf:Description rdf:about="http://example.org/Sun">
+        <ns0:above rdf:resource="http://example.org/Mountains"/>
+      </rdf:Description>
+    </ns0:right_of>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Tree">
+    <ns0:above rdf:resource="http://example.org/House"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Boat">
+    <ns0:above rdf:resource="http://example.org/River"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Land">
+    <ns0:right_of rdf:resource="http://example.org/River"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/House">
+    <ns0:above rdf:resource="http://example.org/Land"/>
+    <ns0:right_of rdf:resource="http://example.org/Boat"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Mountains">
+    <ns0:above rdf:resource="http://example.org/House"/>
+    <ns0:above rdf:resource="http://example.org/River"/>
+  </rdf:Description>
+
+</rdf:RDF>
+
+
